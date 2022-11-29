@@ -1,6 +1,6 @@
 package Seminar04;
 
-public class Magician extends Warrior{
+public class Magician extends Warrior <Staff>{
   
     private int range;
     private int mana;

@@ -1,6 +1,6 @@
 package Seminar04;
 
-public class Archer extends Warrior{
+public class Archer extends Warrior <Bow>{
 
     private int range;
 
