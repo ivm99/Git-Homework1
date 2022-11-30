@@ -9,7 +9,7 @@ public class Staff implements Weapon{
 
     @Override
     public String toString() {
-        return String.format("Staff - %d", damage());
+        return String.format("Staff - damage %d", damage());
     }
     
 }

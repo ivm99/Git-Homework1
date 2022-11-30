@@ -4,27 +4,28 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Team <T extends Warrior> implements Iterable<T>{
+public class Team <N extends Warrior> implements Iterable<N>{
     private Hero hero;
-    private List <T> teamList = new ArrayList<>();
+    private List <N> teamList = new ArrayList<>();
     
     public Team(Hero hero) {
         this.hero = hero;
     }
 
-    public void add(T person) {
+    public void add(N person) {
         teamList.add(person);
     }
 
     @Override
-    public Iterator<T> iterator() {
+    public Iterator<N> iterator() {
         return teamList.iterator();
     }
 
     @Override
     public String toString() {
-        StringBuilder result = new StringBuilder(hero.toString() + "\n");
-        for (T item : this) {
+        StringBuilder result = new StringBuilder();
+        result.append(hero.toString() + "\n");
+        for (N item : this) {
             result.append(item.toString() + "\n");
         }
         return result.toString();
@@ -32,7 +33,7 @@ public class Team <T extends Warrior> implements Iterable<T>{
     
     public int getTeamHealthPoint() {
         int sum = hero.getHealthPoint();
-        for (T member : this) {
+        for (N member : this) {
             sum += member.getHealthPoint();
         }
         return sum;

@@ -7,5 +7,9 @@ public class LongBow extends Bow {
         return 40;
     }
     
+    @Override
+    public String toString() {
+        return String.format("LongBow - damage %d", damage());
+    }
 
 }

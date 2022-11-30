@@ -9,7 +9,7 @@ public class Bow implements Weapon {
 
 @Override
 public String toString() {
-    return String.format("Bow - %d", damage());
+    return String.format("Bow - damage %d", damage());
 }
     
 }
