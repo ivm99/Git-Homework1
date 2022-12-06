@@ -49,10 +49,19 @@ public class ViewUser {
                         userController.updateUser(updateUser);
                         break;
                     case DELETE:
-                           String userId = prompt("Идентификатор пользователя: ");
-                           User needTodeleteUser = userController.readUser(userId);
-                           userController.deleteUser(needTodeleteUser);
-                           break;  
+                        String userId = prompt("Идентификатор пользователя: ");
+                        User needTodeleteUser = userController.readUser(userId);
+                        userController.deleteUser(needTodeleteUser);
+                        break; 
+                    case INFO:
+                        System.out.printf("Список доступных команд: \n"+
+                        "  READ\n" +
+                        "  CREATE\n"+
+                        "  UPDATE\n"+
+                        "  LIST\n"+
+                        "  DELETE\n"+
+                        "  INFO\n"+
+                        "  EXIT\n");
                 }
             } catch (Exception e) {
                 System.out.println(e.getMessage());
