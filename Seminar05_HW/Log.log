@@ -1,4 +1,12 @@
-дек. 06, 2022 6:44:37 PM Seminar05_HW.View.ViewCalc run
-INFO: (3 + 5i) + (1 + 2i) = 4 + 7i
-дек. 06, 2022 6:56:35 PM Seminar05_HW.View.ViewCalc run
-INFO: (3 + 6i) + (1) = 4 + 6i
+дек. 07, 2022 10:21:56 PM Seminar05_HW.View.ViewCalc2 run
+INFO: (1/2) / (2/4) = 4/4
+дек. 07, 2022 10:22:49 PM Seminar05_HW.View.ViewCalc2 run
+INFO: (1/0) + (1/1) = 1/0
+дек. 07, 2022 10:23:57 PM Seminar05_HW.View.ViewCalc2 run
+WARNING: Нужно ввести целое число
+дек. 07, 2022 10:32:06 PM Seminar05_HW.View.ViewCalc2 run
+INFO: (1/2) + (1/2) = 4/4
+дек. 07, 2022 10:32:18 PM Seminar05_HW.View.ViewCalc2 run
+INFO: (1/0) + (1/0) = 0/0
+дек. 07, 2022 10:49:13 PM Seminar05_HW.View.ViewCalc2 run
+WARNING: Нужно ввести целое число

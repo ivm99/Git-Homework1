@@ -1,6 +1,6 @@
 package Seminar05_HW.Model;
 
-public class CalcModel implements Model {
+public class ComplexModel implements Model {
 
     @Override
     public ComplexNum sum(ComplexNum num1, ComplexNum num2) {

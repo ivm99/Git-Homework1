@@ -1,13 +1,13 @@
 package Seminar05_HW.Controller;
 
-import Seminar05_HW.Model.CalcModel;
+import Seminar05_HW.Model.ComplexModel;
 import Seminar05_HW.Model.ComplexNum;
 
 public class UserController {
     
-    private CalcModel calc;
+    private ComplexModel calc;
     
-    public UserController(CalcModel calc) {
+    public UserController(ComplexModel calc) {
         this.calc = calc;
     }
 
