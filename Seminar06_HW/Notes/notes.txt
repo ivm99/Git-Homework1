@@ -1,0 +1,3 @@
+1;    Important;    Important information; 20-12-2022
+2; Note about friend; To meet friend tomorrow; 21-12-2022
+3;  Car repair;  This is note about car repair; 21-12-2022
