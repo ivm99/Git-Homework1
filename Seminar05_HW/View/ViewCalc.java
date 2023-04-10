@@ -3,16 +3,18 @@ package Seminar05_HW.View;
 import java.util.Scanner;
 
 import Seminar05_HW.LogManager;
-import Seminar05_HW.Controller.UserController;
+import Seminar05_HW.Controller.CalcController;
 import Seminar05_HW.Model.ComplexNum;
+import Seminar05_HW.Model.Num;
+import Seminar05_HW.Model.RationalNum;
 
 public class ViewCalc {
 
-    private UserController userController;
+    private CalcController calcController;
     private LogManager logManager;
 
-    public ViewCalc(UserController userController, LogManager logManager ) {
-        this.userController = userController;
+    public ViewCalc(CalcController userController, LogManager logManager ) {
+        this.calcController = userController;
         this.logManager = logManager;
     }
 
@@ -31,38 +33,38 @@ public class ViewCalc {
             try {
                 switch (com) {
                     case PLUS:
-                        ComplexNum num1 = setComplexNumber("Первое число (действ.часть): ", "Первое число (мним.часть): ");
+                        Num num1 = setNumber("Первое число (действ.часть): ", "Первое число (мним.часть): ");
                         printFirstNumber(num1);
-                        ComplexNum num2 = setComplexNumber("Второе число (действ.часть): ", "Второе число (мним.часть): ");
+                        Num num2 = setNumber("Второе число (действ.часть): ", "Второе число (мним.часть): ");
                         printSecondNumber(num2);
-                        ComplexNum result1 = userController.sum(num1, num2);
+                        Num result1 = calcController.sum(num1, num2);
                         printResult(result1);
                         logManager.WriteLog().info(String.format("(%s) + (%s) = %s", num1, num2, result1));
                         break;
                     case MINUS:
-                        ComplexNum num3 = setComplexNumber("Первое число (действ.часть): ", "Первое число (мним.часть): ");
+                        Num num3 = setNumber("Первое число (действ.часть): ", "Первое число (мним.часть): ");
                         printFirstNumber(num3);
-                        ComplexNum num4 = setComplexNumber("Второе число (действ.часть): ", "Второе число (мним.часть): ");
+                        Num num4 = setNumber("Второе число (действ.часть): ", "Второе число (мним.часть): ");
                         printSecondNumber(num4);
-                        ComplexNum result2 = userController.sub(num3, num4);
+                        Num result2 = calcController.sub(num3, num4);
                         printResult(result2);
                         logManager.WriteLog().info(String.format("(%s) - (%s) = %s", num3, num4, result2));
                         break;
                     case MULT:
-                        ComplexNum num5 = setComplexNumber("Первое число (действ.часть): ", "Первое число (мним.часть): ");
+                        Num num5 = setNumber("Первое число (действ.часть): ", "Первое число (мним.часть): ");
                         printFirstNumber(num5);
-                        ComplexNum num6 = setComplexNumber("Второе число (действ.часть): ", "Второе число (мним.часть): ");
+                        Num num6 = setNumber("Второе число (действ.часть): ", "Второе число (мним.часть): ");
                         printSecondNumber(num6);
-                        ComplexNum result3 = userController.mult(num5, num6);
+                        Num result3 = calcController.mult(num5, num6);
                         printResult(result3);
                         logManager.WriteLog().info(String.format("(%s) * (%s) = %s", num5, num6, result3));
                         break;
                     case DIV:
-                        ComplexNum num7 = setComplexNumber("Первое число (действ.часть): ", "Первое число (мним.часть): ");
+                        Num num7 = setNumber("Первое число (действ.часть): ", "Первое число (мним.часть): ");
                         printFirstNumber(num7);
-                        ComplexNum num8 = setComplexNumber("Второе число (действ.часть): ", "Второе число (мним.часть): ");
+                        Num num8 = setNumber("Второе число (действ.часть): ", "Второе число (мним.часть): ");
                         printSecondNumber(num8);
-                        ComplexNum result4 = userController.div(num7, num8);
+                        Num result4 = calcController.div(num7, num8);
                         printResult(result4);
                         logManager.WriteLog().info(String.format("(%s) / (%s) = %s", num7, num8, result4));
                         break;
@@ -87,19 +89,23 @@ public class ViewCalc {
         return in.nextLine();
     }
 
-    private ComplexNum setComplexNumber(String realSt, String imgSt) {
+    private<T> Num <T> setNumber(String realSt, String imgSt) {
         return new ComplexNum(promptInt(realSt), promptInt(imgSt));
     }
+    // @Override
+    // private Num <RationalNum> setNumber(String realSt, String imgSt) {
+    //     return new ComplexNum(promptInt(realSt), promptInt(imgSt));
+    // }
 
-    private void printFirstNumber(ComplexNum num) {
+    private void printFirstNumber(Num num) {
         System.out.printf("Первое число: %s\n", num);
     }
 
-    private void printSecondNumber(ComplexNum num) {
+    private void printSecondNumber(Num num) {
         System.out.printf("Второе число: %s\n", num);
     }
 
-    private void printResult(ComplexNum result) {
+    private void printResult(Num result) {
         System.out.printf("Результат: %s\n", result);
     }
 }

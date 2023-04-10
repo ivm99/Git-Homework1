@@ -21,7 +21,7 @@ public class Exercise01 {
         VendingMachine v1 = new VendingMachine(1, prods);
         System.out.print(v1);
         
-        String valueForSearch = "мол";
+        String valueForSearch = "Шок";
         if (v1.getProductBy(valueForSearch).size() != 0) {
             for (Product product : v1.getProductBy(valueForSearch)) {
             System.out.print(product+"\n");

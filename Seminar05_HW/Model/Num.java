@@ -1,5 +1,5 @@
 package Seminar05_HW.Model;
 
-public abstract class Number {
+public abstract class Num <N>{
     
 }

@@ -1,0 +1,11 @@
+{
+    "java.project.sourcePaths": [
+        "Seminar06_HW",
+        "Seminar05/src",
+        "OOP_Lesson6_Solid2/SolidDip/src",
+        "OOP_Lesson6_Solid2/HomeWork",
+        "OOP_Lesson6_Solid/SolidDip/src",
+        "OOP_Lesson6_Solid/HomeWork",
+        "Seminar07"
+    ]
+}

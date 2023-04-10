@@ -1,6 +1,6 @@
 package Seminar05_HW.Model;
 
-public class RationalNum{
+public class RationalNum extends Num{
     
     private int nom;
     private int denom;

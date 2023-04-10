@@ -1,6 +1,6 @@
 package Seminar05_HW.Model;
 
-public class ComplexNum {
+public class ComplexNum extends Num{
     
     private int real;
     private int img;

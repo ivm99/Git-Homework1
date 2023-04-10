@@ -1,6 +1,6 @@
 package Seminar05_HW.Model;
 
-public class RationalModel implements Model2 {
+public class RationalModel implements Model <RationalNum>{
 
 
     @Override
@@ -22,6 +22,8 @@ public class RationalModel implements Model2 {
     public RationalNum div(RationalNum num1, RationalNum num2) {
         return new RationalNum(num1.getNom()*num2.getDenom(), num1.getDenom()*num2.getNom());
     }
+
+
 
     
 }

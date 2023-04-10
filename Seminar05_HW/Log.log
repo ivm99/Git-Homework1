@@ -10,3 +10,7 @@ INFO: (1/2) + (1/2) = 4/4
 INFO: (1/0) + (1/0) = 0/0
 дек. 07, 2022 10:49:13 PM Seminar05_HW.View.ViewCalc2 run
 WARNING: Нужно ввести целое число
+дек. 15, 2022 8:39:02 PM Seminar05_HW.View.ViewCalc run
+WARNING: Нужно ввести целое число
+дек. 15, 2022 8:57:47 PM Seminar05_HW.View.ViewCalc run
+INFO: (1 + 2i) + (1 + 2i) = 2 + 4i

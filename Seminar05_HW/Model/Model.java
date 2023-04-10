@@ -1,10 +1,10 @@
 package Seminar05_HW.Model;
 
-public interface Model {
+public interface Model <T extends Num> {
     
-    ComplexNum sum(ComplexNum num1, ComplexNum num2);
-    ComplexNum sub(ComplexNum num1, ComplexNum num2);
-    ComplexNum mult(ComplexNum num1, ComplexNum num2);
-    ComplexNum div(ComplexNum num1, ComplexNum num2);
+    T sum(T num1, T num2);
+    T sub(T num1, T num2);
+    T mult(T num1, T num2);
+    T div(T num1, T num2);
 
 }

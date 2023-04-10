@@ -3,13 +3,15 @@ package personal.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RepositoryFile implements Repository {
-    private UserMapper mapper = new UserMapper();
+public class RepositoryFile <N extends iUserMap> implements Repository {
+    private N mapper;
     private FileOperation fileOperation;
 
-    public RepositoryFile(FileOperation fileOperation) {
+    public RepositoryFile(N mapper, FileOperation fileOperation) {
+        this.mapper = mapper;
         this.fileOperation = fileOperation;
     }
+
 
     @Override
     public List<User> getAllUsers() {
