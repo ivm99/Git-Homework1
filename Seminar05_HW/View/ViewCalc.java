@@ -33,38 +33,64 @@ public class ViewCalc {
             try {
                 switch (com) {
                     case PLUS:
+<<<<<<< HEAD
                         Num num1 = setNumber("Первое число (действ.часть): ", "Первое число (мним.часть): ");
                         printFirstNumber(num1);
                         Num num2 = setNumber("Второе число (действ.часть): ", "Второе число (мним.часть): ");
+=======
+                        ComplexNum num1 = setComplexNumber("Первое число: действ.часть: ", "Первое число: мним.часть: ");
+                        printFirstNumber(num1);
+                        ComplexNum num2 = setComplexNumber("Второе число: действ.часть: ", "Второе число: мним.часть: ");
+>>>>>>> parent of 556b5aa (Добавлено вычисление рациональных чисел)
                         printSecondNumber(num2);
                         Num result1 = calcController.sum(num1, num2);
                         printResult(result1);
                         logManager.WriteLog().info(String.format("(%s) + (%s) = %s", num1, num2, result1));
                         break;
                     case MINUS:
+<<<<<<< HEAD
                         Num num3 = setNumber("Первое число (действ.часть): ", "Первое число (мним.часть): ");
                         printFirstNumber(num3);
                         Num num4 = setNumber("Второе число (действ.часть): ", "Второе число (мним.часть): ");
+=======
+                        ComplexNum num3 = setComplexNumber("Первое число: действ.часть: ", "Первое число: мним.часть: ");
+                        printFirstNumber(num3);
+                        ComplexNum num4 = setComplexNumber("Второе число: действ.часть: ", "Второе число: мним.часть: ");
+>>>>>>> parent of 556b5aa (Добавлено вычисление рациональных чисел)
                         printSecondNumber(num4);
                         Num result2 = calcController.sub(num3, num4);
                         printResult(result2);
                         logManager.WriteLog().info(String.format("(%s) - (%s) = %s", num3, num4, result2));
                         break;
                     case MULT:
+<<<<<<< HEAD
                         Num num5 = setNumber("Первое число (действ.часть): ", "Первое число (мним.часть): ");
                         printFirstNumber(num5);
                         Num num6 = setNumber("Второе число (действ.часть): ", "Второе число (мним.часть): ");
+=======
+                        ComplexNum num5 = setComplexNumber("Первое число: действ.часть: ", "Первое число: мним.часть: ");
+                        printFirstNumber(num5);
+                        ComplexNum num6 = setComplexNumber("Второе число: действ.часть: ", "Второе число: мним.часть: ");
+>>>>>>> parent of 556b5aa (Добавлено вычисление рациональных чисел)
                         printSecondNumber(num6);
                         Num result3 = calcController.mult(num5, num6);
                         printResult(result3);
                         logManager.WriteLog().info(String.format("(%s) * (%s) = %s", num5, num6, result3));
                         break;
                     case DIV:
+<<<<<<< HEAD
                         Num num7 = setNumber("Первое число (действ.часть): ", "Первое число (мним.часть): ");
                         printFirstNumber(num7);
                         Num num8 = setNumber("Второе число (действ.часть): ", "Второе число (мним.часть): ");
                         printSecondNumber(num8);
                         Num result4 = calcController.div(num7, num8);
+=======
+                        ComplexNum num7 = setComplexNumber("Первое число: действ.часть: ", "Первое число: мним.часть: ");
+                        printFirstNumber(num7);
+                        ComplexNum num8 = setComplexNumber("Второе число: действ.часть: ", "Второе число: мним.часть: ");
+                        printSecondNumber(num8);
+                        ComplexNum result4 = userController.mult(num7, num8);
+>>>>>>> parent of 556b5aa (Добавлено вычисление рациональных чисел)
                         printResult(result4);
                         logManager.WriteLog().info(String.format("(%s) / (%s) = %s", num7, num8, result4));
                         break;

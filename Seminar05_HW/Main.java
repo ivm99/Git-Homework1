@@ -8,7 +8,6 @@ import Seminar05_HW.Model.Model;
 import Seminar05_HW.Model.RationalModel;
 import Seminar05_HW.Model.RationalNum;
 import Seminar05_HW.View.ViewCalc;
-import Seminar05_HW.View.ViewCalc2;
 
 public class Main {
     public static void main(String[] args) {
