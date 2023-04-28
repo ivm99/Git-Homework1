@@ -28,8 +28,13 @@ public abstract class Warrior <T extends Weapon, E extends Shield> {
     public Weapon getWeapon() {
         return weapon;
     }
+<<<<<<< HEAD
     
     public void setWeapon(T weapon) {
+=======
+
+    public void setWeapon(Weapon weapon) {
+>>>>>>> parent of 6536339 (Семинар 4 изменен - добавлен Generic)
         this.weapon = weapon;
     }
     
